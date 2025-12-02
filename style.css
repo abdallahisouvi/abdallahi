@@ -1,0 +1,41 @@
+/* Souvi Academy - Blue + Green Card UI */
+:root{
+  --blue:#1976d2;
+  --green:#2db34a;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --bg:#f3f6fb;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Cairo",sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:#111827;
+  direction:rtl;
+}
+.container{max-width:var(--container);margin:0 auto;padding:18px}
+.site-header{background:linear-gradient(90deg,var(--blue),var(--green));color:white;padding:24px 0;text-align:center}
+.site-header h1{margin:0;font-size:28px}
+.tagline{opacity:0.95;margin:6px 0 0;font-size:15px}
+.main-nav{display:flex;gap:12px;justify-content:center;padding:12px 0;margin-bottom:12px}
+.main-nav a{color:var(--blue);text-decoration:none;font-weight:700;padding:8px 12px;border-radius:8px;background:white;box-shadow:0 2px 6px rgba(16,24,40,0.06)}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.06);margin-bottom:18px}
+.hero{padding:28px;text-align:center}
+.actions{margin-top:18px}
+.btn{display:inline-block;background:var(--blue);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn.ghost{background:transparent;border:2px solid rgba(0,0,0,0.06);color:var(--blue)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.feature h3{margin-top:0;color:var(--green)}
+.ad-slot{padding:20px;text-align:center;background:linear-gradient(90deg,rgba(25,118,210,0.06),rgba(45,179,74,0.06));border-radius:10px}
+.books-list{list-style:none;padding:0;margin:0}
+.books-list li{padding:10px 12px;border-bottom:1px solid #eef2f7;display:flex;justify-content:space-between;align-items:center}
+.books-list a{color:var(--blue);text-decoration:none;font-weight:700}
+.btn-small{background:var(--green);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+.site-footer{padding:18px;text-align:center;color:var(--muted);margin-top:20px}
+/* responsive */
+@media(max-width:600px){
+  .main-nav{flex-wrap:wrap}
+  .site-header h1{font-size:20px}
+}
