@@ -1,0 +1,12 @@
+[
+  {
+    "title": "كتاب1 - مدخل في الرياضيات",
+    "author": "مؤلف 1",
+    "url": "assets/books/book1.pdf"
+  },
+  {
+    "title": "كتاب2 - أساسيات اللغة العربية",
+    "author": "مؤلف 2",
+    "url": "assets/books/book2.pdf"
+  }
+]
